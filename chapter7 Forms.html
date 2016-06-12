@@ -1,0 +1,83 @@
+<html>
+<head><title>Chapter 7 - Forms</title></head>
+<body>
+	<form action="http://www.example.com/login.php" method="get">
+		<p>This is where form controls will appear</p><br/>
+		<p>Username: <input type="text" name="username" maxlength="15"/></p>
+		<p>Comments section:</p>
+		<textarea name="comments"></textarea></br>
+		<p><b>Radio button</b></p>
+		<p>Please select your favorite genre:</p>
+		<input type="radio" name="genre" value="rock" checked="checked"/>Rock
+		<input type="radio" name="genre" value="pop"/>Pop
+		<input type="radio" name="genre" value="jazz"/>Jazz
+		<p><b>Checkboxes</b></p>
+		<p>Please select your favorite music service</p>
+		<input type="checkbox" name="service" value="itunes" checked="checked"/>iTunes
+		<input type="checkbox" name="service" value="spotify"/>Spotify
+		<input type="checkbox" name="service" value="lastfm"/>LastFm
+		<p><b>Drop Down List Box</b></p>
+		<p>What device do you listen to music on?</p>
+		<select names="devices">
+			<option value="ipod">iPod</option>
+			<option value="radio">Radio</option>
+			<option value="computer">Computer</option>
+		</select></br>
+
+		<p><b>File Input Box</b></p>
+		<p>Upload your document:</p>
+		<input type="file" name="userDocument"/>
+		<input type="submit" value="Upload"/>
+
+		<p><b>Grouping form elements</b></p>
+		<fieldset>
+			<legend>Contact details</legend>
+			<label>Email</br>
+			<input type=”text” name=”email”/></label></br>
+			<label>Mobile</br>
+			<input type=”text” name=”mobile”/></label></br>
+			<label>Telephone</br>
+			<input type=”text” name=”telephone”/><label></br>
+		</fieldset>
+	<p><b>EXAMPLE</b></p>
+	<fieldset>
+		<legend>Your Details:</legend>
+		<label>Name:<input type="text" name="userName" maxlength="10"/>
+		</label></br>
+		<label>Email: <input type="email" name="userEmail" maxlength="10"/></label></br>
+
+	</fieldset>
+	<br/>
+
+	<fieldset>
+		<legend>Your Review:</legend>
+		<p>How did you hear about us?
+			<select type="text">
+			<option>Google</option>
+			<option>Friend</option>
+			<option>Journal</option>
+		</select></p>
+
+		<p>Would you visit again?</p>
+		<input type="radio" name="rating" value="yes"/>Yes
+		<input type="radio" name="rating" value="no"/>No
+		<input type="radio" name="rating" value="maybe"/>Maybe</br>
+
+Comments:</br>
+		<textarea name="comments"></textarea>
+		<p><input type="checkbox" name="signup" required="required"/> Sign up fo email updates</p>
+		<input type="submit" name="submit" value= "submit review"/>
+
+
+
+
+
+	</fieldset>
+
+
+
+
+	</form>
+
+</body>	
+</html>
